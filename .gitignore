@@ -1,0 +1,36 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+
+# Intellij project files
+*.iml
+.idea/
+
+# Others
+target/
+logs/
+/examples/showcase/bin/yuicompressor-2.4.*.jar
+/support/jmeter/*.jtl
+/support/jmeter/*.log
+/support/local-script/
+
+/bin
+/target
+/nsi/menpuji.exe
+/nsi/cache
+/nsi/debug.log
+/nsi/installmenpuji.exe
+/menpuji-deviceserver/bin
+/menpuji-deviceserver/bin
+/nsi/installmenpuji_oem.exe
+/repository
+.DS_Store
+/menpuji-webapp/src/main/webapp/style/basexxx.less
+
+/data
+/menpuji-webapp/src/main/webapp/modules/autotest2
+/menpuji-webapp/src/main/webapp/.sassbuilder-config.json
+
+node_modules
