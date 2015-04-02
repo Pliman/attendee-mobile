@@ -3,118 +3,23 @@ var require = {
 	baseUrl: root + '/',
 	waitSeconds: 600,
 	paths: {
+		angular: 'lib/angular/angular',
+		lodash: 'lib/lodash/dist/lodash',
 		'angular-animate': 'lib/angular-animate/angular-animate',
 		'angular-aria': 'lib/angular-aria/angular-aria',
-		'angular-cookies': 'lib/angular-cookies/angular-cookies',
-		'angular-messages': 'lib/angular-messages/angular-messages',
 		'angular-mocks': 'lib/angular-mocks/angular-mocks',
-		'angular-resource': 'lib/angular-resource/angular-resource',
-		'angular-sanitize': 'lib/angular-sanitize/angular-sanitize',
 		'angular-route': 'lib/angular-route/angular-route',
 		'angular-ui-router': 'lib/angular-ui-router/release/angular-ui-router',
-		'assert': 'common/utils/assert',
-		angular: 'lib/angular/angular',
-		bootstrap: 'lib/bootstrap/dist/js/bootstrap',
-		jquery: 'lib/jquery/jquery.min',
-		lodash: 'lib/lodash/dist/lodash.compat',
-		css: 'lib/require-css/css',
-		'angular-md5': 'lib/angular-md5/angular-md5',
-		base64: 'lib/requirejs-base64/base64',
-		'business-module': 'modules/meta',
-		'extension': 'common/module/mpj-module',
-		'angular-growl': 'lib/angular-growl/angular-growl',
-		'indexeddbshim': 'lib/indexeddbshim/indexeddbshim-modified',
-		'angular-bootstrap': 'lib/angular-bootstrap/ui-bootstrap-tpls',
-		'angular-toggle-switch': 'lib/angular-toggle-switch/angular-toggle-switch.min',
-		'async': 'lib/async/lib/async',
-		'infiniteScroll': 'lib/infinite-scroll/infinite-scroll',
-		'node-uuid': 'lib/node-uuid/uuid',
-		'angular-touch': 'lib/angular-touch/angular-touch',
-		moment: 'lib/moment/moment',
-		base32: 'lib/base32/base32',
-		uuid: 'lib/uuid/uuid',
-		loadOnDemand: 'lib/loadOnDemand/loadOnDemand',
-		cordova: 'lib/cordova/cordova',
-		unicodeToGBK: 'lib/unicodeToGBK/UNIC_GBK',
-		'angular-locale_zh-hans-cn': 'lib/angular-i18n/angular-locale_zh-hans-cn',
-		'angular-locale_zh-hk': 'lib/angular-i18n/angular-locale_zh-hk',
-		'angular-locale_en-us': 'lib/angular-i18n/angular-locale_en-us',
-		'angular-locale_en-sg': 'lib/angular-i18n/angular-locale_en-sg',
-		'angular-locale_zh-tw': 'lib/angular-i18n/angular-locale_zh-tw',
-		'angular-locale_zh-cn': 'lib/angular-i18n/angular-locale_zh-cn',
-		'angular-locale_zh-sg': 'lib/angular-i18n/angular-locale_zh-sg',
-		'angular-translate': 'lib/angular-translate/angular-translate',
-		'ui.popup': 'ui/inpage/inpage', 'readable-range': 'lib/moment/readable-range',
-		'zh-cn': 'lib/moment/lang/zh-cn',
-		ImageCropper: 'lib/imagecropper/ImageCropper',
-		highcharts: 'lib/highcharts/highcharts',
-		jcrop: 'lib/jcrop/jquery.Jcrop',
-		'jquery-rotate': 'lib/jquery-rotate/jQueryRotate.2.2',
-		'jquery-gridly': 'lib/jquery-gridly/jquery.gridly',
-		'calc': 'lib/calc/calc',
-		'number-format': 'lib/number-format/number-format',
-		'angular-strap': "lib/angular-strap/angular-strap",
-		'angular-strap-tpl': "lib/angular-strap/angular-strap.tpl",
-		'select': 'lib/select/select',
-		'select-tpl': 'lib/select/select.tpl',
-		'vectordiv': 'lib/vectordiv/vectordiv',
-		'angular-file-upload': "lib/angular-file-upload/angular-file-upload",
-		'angular-file-upload-html5-shim': "lib/angular-file-upload/angular-file-upload-html5-shim",
-		"zero-clipboard": "lib/zero-clipboard/ZeroClipboard",
 		"hammerjs": "lib/hammer/hammer-proxy",
 		"angular-material": "lib/angular-material/angular-material",
 		"jsContract": "lib/js-contract/jsContract"
 	},
 	shim: {
-		lodash: {
-			exports: 'lodash'
-		},
-		jquery: {
-			exports: 'jQuery'
-		},
-		bootstrap: {
-			deps: [
-				'jquery'
-			]
-		},
 		angular: {
 			exports: 'angular'
 		},
-
-		'angular-locale_zh-cn': {
-			deps: [
-				'angular'
-			]
-		},
-		'angular-locale_zh-hans-cn': {
-			deps: [
-				'angular'
-			]
-		},
-		'angular-locale_zh-hk': {
-			deps: [
-				'angular'
-			]
-		},
-		'angular-locale_en-us': {
-			deps: [
-				'angular'
-			]
-		},
-		'angular-locale_en-sg': {
-			deps: [
-				'angular'
-			]
-		},
-		'angular-locale_zh-tw': {
-			deps: [
-				'angular'
-			]
-		},
-		'angular-locale_zh-sg': {
-			deps: [
-				'angular'
-			]
+		lodash: {
+			exports: 'lodash'
 		},
 		'angular-animate': {
 			deps: [
@@ -126,22 +31,7 @@ var require = {
 				'angular'
 			]
 		},
-		'angular-cookies': {
-			deps: [
-				'angular'
-			]
-		},
-		'angular-messages': {
-			deps: [
-				'angular'
-			]
-		},
 		'angular-mocks': {
-			deps: [
-				'angular'
-			]
-		},
-		'angular-resource': {
 			deps: [
 				'angular'
 			]
@@ -151,131 +41,10 @@ var require = {
 				'angular'
 			]
 		},
-		'angular-sanitize': {
-			deps: [
-				'angular'
-			]
-		},
 		'angular-ui-router': {
 			deps: [
 				'angular'
 			]
-		},
-		'angular-md5': {
-			deps: [
-				'angular'
-			]
-		},
-		'indexeddbshim': {
-			exports: 'shimIndexedDB'
-		},
-		'angular-growl': {
-			deps: [
-				'angular'
-			]
-		},
-		'angular-bootstrap': {
-			deps: [
-				'angular'
-			]
-		},
-		'angular-toggle-switch': {
-			deps: [
-				'angular'
-			]
-		},
-		'infiniteScroll': {
-			deps: [
-				'angular'
-			]
-		},
-		async: {
-			exports: 'async'
-		},
-		'node-uuid': {
-			exports: 'uuid'
-		},
-		'angular-touch': {
-			deps: [
-				'angular'
-			]
-		},
-		moment: {
-			exports: 'moment'
-		},
-		'base32': {
-			exports: 'base32'
-		},
-		'uuid': {
-			exports: 'UUID'
-		},
-		loadOnDemand: {
-			deps: [
-				'angular'
-			]
-		},
-		'cordova': {
-			exports: 'cordova'
-		},
-		unicodeToGBK: {
-			exports: '$URL'
-		},
-		'readable-range': {
-			deps: [
-				'moment',
-				'zh-cn'
-			]
-		},
-		'zh-cn': {
-			deps: [
-				'moment'
-			]
-		},
-		ImageCropper: {
-			exports: 'ImageCropper'
-		},
-		highcharts: {
-			deps: [
-				'jquery'
-			],
-			exports: 'Highcharts'
-		},
-		jcrop: {
-			deps: [
-				'jquery'
-			]
-		},
-		'jquery-rotate': {
-			deps: [
-				'jquery'
-			]
-		}, 'angular-translate': {
-			deps: [
-				'angular'
-			]
-		},
-		'number-format': {
-			exports: 'formatter'
-		},
-		'angular-strap': {
-			deps: ['angular']
-		},
-		'angular-strap-tpl': {
-			deps: ['angular', 'angular-strap']
-		},
-		'jquery-gridly': {
-			deps: [
-				'jquery'
-			]
-		},
-		'vectordiv': {
-			exports: 'vectorDiv'
-		},
-		'angular-file-upload': {
-			deps: ['angular', 'angular-file-upload-html5-shim']
-		},
-		"zero-clipboard": {
-			exports: 'ZeroClipboard'
 		},
 		"jsContract": {
 			exports: 'Contract'
