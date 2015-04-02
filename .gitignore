@@ -34,3 +34,7 @@ logs/
 /menpuji-webapp/src/main/webapp/.sassbuilder-config.json
 
 node_modules
+
+build.prop
+CordovaApp-debug-unaligned.apk
+CordovaApp-debug.apk
